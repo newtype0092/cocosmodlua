@@ -1,15 +1,26 @@
 # MacOS
 .DS_Store
 
+# Ignore files build by xcode
+*.pbxuser
+*.xcbkptlist
+*.xcworkspacedata
+*.xcuserstate
+*.xccheckout
+xcuserdata/
+DerivedData/
+
+# Ignore vim swaps
+*.swp
+*.swo
+
 # prebuilt
+v3-deps-*.zip
 /external/*
 !/external/config.json
-/tools/fbx-conv/
+/tools/fbx-conv/*
 
 # plugin
 /plugin/*
 !/plugin/README.md
 
-# Ignore vim swaps
-*.swp
-*.swo
