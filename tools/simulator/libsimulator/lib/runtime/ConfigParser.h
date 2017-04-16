@@ -37,6 +37,7 @@ public:
     int getDebugPort();
     bool isLanscape();
     bool isWindowTop();
+    bool isShowConsole();
     
     void setEntryFile(const std::string &file);
     void setInitViewSize(const cocos2d::Size &size);
@@ -53,6 +54,7 @@ private:
     string _entryfile;
     bool _isLandscape;
     bool _isWindowTop;
+    bool _isShowConsole;
     int _consolePort;
     int _uploadPort;
     int _debugPort;

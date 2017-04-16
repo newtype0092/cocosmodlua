@@ -98,6 +98,10 @@ void ConfigParser::readConfig(const string &filepath)
             {
                 _isWindowTop= objectInitView["isWindowTop"].GetBool();
             }
+            if (objectInitView.HasMember("isShowConsole"))
+            {
+                _isShowConsole = (objectInitView["isShowConsole"].GetBool());
+            }
         }
     }
     if (_docRootjson.HasMember("simulator_screen_size"))
@@ -158,6 +162,10 @@ bool ConfigParser::isLanscape()
 bool ConfigParser::isWindowTop()
 {
     return _isWindowTop;
+}
+bool ConfigParser::isShowConsole()
+{
+    return _isShowConsole;
 }
 void ConfigParser::setConsolePort(int port)
 {
