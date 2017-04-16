@@ -1,0 +1,7 @@
+# external
+/external
+!/external/config.json
+
+# plugin
+/plugin
+!/plugin/README.md
