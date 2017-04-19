@@ -51,6 +51,17 @@ end
 require "cocos.extension.ExtensionConstants"
 -- network
 require "cocos.network.NetworkConstants"
+-- socket
+package.loaded["socket"] = require("cocos.network.socket")
+package.loaded["ltn12"] = require("cocos.network.ltn12")
+package.loaded["mime"] = require("cocos.network.mime")
+package.loaded["socket.headers"] = require("cocos.network.socket.headers")
+package.loaded["socket.url"] = require("cocos.network.socket.url")
+package.loaded["socket.mbox"] = require("cocos.network.socket.mbox")
+package.loaded["socket.tp"] = require("cocos.network.socket.tp")
+package.loaded["socket.ftp"] = require("cocos.network.socket.ftp")
+package.loaded["socket.smtp"] = require("cocos.network.socket.smtp")
+package.loaded["socket.http"] = require("cocos.network.socket.http")
 -- Spine
 if nil ~= sp then
     require "cocos.spine.SpineConstants"
@@ -61,7 +72,7 @@ require "cocos.cocos2d.DrawPrimitives"
 
 -- Lua extensions
 require "cocos.cocos2d.bitExtend"
-
+--[[
 -- CCLuaEngine
 require "cocos.cocos2d.DeprecatedCocos2dClass"
 require "cocos.cocos2d.DeprecatedCocos2dEnum"
@@ -97,7 +108,7 @@ if nil ~= ccui then
     require "cocos.ui.DeprecatedUIEnum"
     require "cocos.ui.DeprecatedUIFunc"
 end
-
+]]
 -- cocosbuilder
 require "cocos.cocosbuilder.CCBReaderLoad"
 

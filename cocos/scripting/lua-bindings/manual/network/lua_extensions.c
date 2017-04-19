@@ -28,7 +28,7 @@ void luaopen_lua_extensions(lua_State *L)
     }
     lua_pop(L, 2);
 
-    luaopen_luasocket_scripts(L);
+//    luaopen_luasocket_scripts(L);
 }
 
 #if __cplusplus
