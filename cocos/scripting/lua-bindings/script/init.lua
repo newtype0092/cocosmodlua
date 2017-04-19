@@ -52,16 +52,16 @@ require "cocos.extension.ExtensionConstants"
 -- network
 require "cocos.network.NetworkConstants"
 -- socket
-package.loaded["socket"] = require("cocos.network.socket")
-package.loaded["ltn12"] = require("cocos.network.ltn12")
-package.loaded["mime"] = require("cocos.network.mime")
-package.loaded["socket.headers"] = require("cocos.network.socket.headers")
-package.loaded["socket.url"] = require("cocos.network.socket.url")
-package.loaded["socket.mbox"] = require("cocos.network.socket.mbox")
-package.loaded["socket.tp"] = require("cocos.network.socket.tp")
-package.loaded["socket.ftp"] = require("cocos.network.socket.ftp")
-package.loaded["socket.smtp"] = require("cocos.network.socket.smtp")
-package.loaded["socket.http"] = require("cocos.network.socket.http")
+package.loaded["socket"] = require("cocos.network.luasocket.socket")
+package.loaded["ltn12"] = require("cocos.network.luasocket.ltn12")
+package.loaded["mime"] = require("cocos.network.luasocket.mime")
+package.loaded["socket.headers"] = require("cocos.network.luasocket.socket.headers")
+package.loaded["socket.url"] = require("cocos.network.luasocket.socket.url")
+package.loaded["socket.mbox"] = require("cocos.network.luasocket.socket.mbox")
+package.loaded["socket.tp"] = require("cocos.network.luasocket.socket.tp")
+package.loaded["socket.ftp"] = require("cocos.network.luasocket.socket.ftp")
+package.loaded["socket.smtp"] = require("cocos.network.luasocket.socket.smtp")
+package.loaded["socket.http"] = require("cocos.network.luasocket.socket.http")
 -- Spine
 if nil ~= sp then
     require "cocos.spine.SpineConstants"
