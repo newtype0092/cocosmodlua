@@ -676,7 +676,8 @@ ldefault(lua_State *L) {
 	return 1;
 }
 
-LUAMOD_API int
+//LUAMOD_API int // 5.3
+LUA_API int
 luaopen_sproto_core(lua_State *L) {
 #ifdef luaL_checkversion
 	luaL_checkversion(L);
@@ -697,5 +698,5 @@ luaopen_sproto_core(lua_State *L) {
 	pushfunction_withbuffer(L, "encode", lencode);
 	pushfunction_withbuffer(L, "pack", lpack);
 	pushfunction_withbuffer(L, "unpack", lunpack);
-	return 1;
+//	return 1;
 }

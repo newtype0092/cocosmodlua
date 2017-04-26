@@ -1,4 +1,3 @@
-mo
 local parser = require "sprotoparser"
 local core = require "sproto.core"
 local sproto = require "sproto"

@@ -62,6 +62,12 @@ package.loaded["socket.tp"] = require("cocos.network.luasocket.socket.tp")
 package.loaded["socket.ftp"] = require("cocos.network.luasocket.socket.ftp")
 package.loaded["socket.smtp"] = require("cocos.network.luasocket.socket.smtp")
 package.loaded["socket.http"] = require("cocos.network.luasocket.socket.http")
+--sproto
+package.loaded["sproto"] = require("cocos.network.sproto.sproto")
+package.loaded["sprotoparser"] = require("cocos.network.sproto.sprotoparser")
+package.loaded["sprotoloader"] = require("cocos.network.sproto.sprotoloader")
+
+
 -- Spine
 if nil ~= sp then
     require "cocos.spine.SpineConstants"
